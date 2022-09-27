@@ -121,12 +121,24 @@ h2,
 h3,
 h5,
 h6 {
-  font-family: var(--heading-font);
-  color: var(--headline-color-on-white);
-  font-size: 1.5em;
+  font-weight: 800;
+  background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+  background-clip: var();
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.4px rgb(0, 0, 0);
+  margin: 0;
+  min-width: 120px;
+  text-decoration: none;
   text-align: center;
-
 }
+.title{
+  font-size: 30px;
+}
+h3{
+  font-size: 25px;
+}
+
 #hero-img{
     width: 100%;
 }
