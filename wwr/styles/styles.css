@@ -84,7 +84,6 @@ header nav a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
-  padding: none;
   text-decoration: none;
 }
 header nav a:hover {
@@ -131,6 +130,11 @@ h6 {
 }
 #hero-img{
     width: 100%;
+}
+.card-img{
+    width: 30%;
+    padding: 0;
+
 }
 
 .icon {
