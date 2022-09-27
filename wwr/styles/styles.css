@@ -108,7 +108,6 @@ header .logo,.icon{
   background-clip: var();
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
   margin: 0;
 }
 h4 {
@@ -170,6 +169,8 @@ h6 {
     border-radius: 6px;
     -webkit-text-fill-color: #ffffff;
     text-decoration: none;
+    font-weight: bold;
+
   }
 
 .book:hover,
