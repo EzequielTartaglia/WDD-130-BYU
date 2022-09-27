@@ -125,7 +125,7 @@ h5,
 h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
-  font-size: 16px;
+  font-size: 1.5em;
   text-align: center;
 
 }
@@ -147,7 +147,7 @@ h6 {
     var(--secondary-color),
     var(--paragraph-background-color)
   );
-  padding: 5px;
+  padding: 15px;
   border: solid 0.3px rgb(230, 230, 230);
   border-radius: 6px;
   -webkit-text-fill-color: #ffffff;
@@ -161,7 +161,7 @@ h6 {
       var(--secondary-color),
       var(--paragraph-background-color)
     );
-    padding: 5px;
+    padding: 15px;
     border: solid 0.3px rgb(0, 0, 0);
     border-radius: 6px;
     -webkit-text-fill-color: #ffffff;
@@ -175,6 +175,8 @@ h6 {
     var(--nav-hover-background-color-1),
     var(--nav-hover-background-color-2)
   );
+  border: solid 0.3px rgb(0, 0, 0);
+
 }
 
 .msg {
@@ -213,7 +215,6 @@ footer a {
   -webkit-text-fill-color: transparent;
   margin: 0;
   text-decoration: none;
-  text-size-adjust: 1.5em;
 }
 
 footer a:hover {
