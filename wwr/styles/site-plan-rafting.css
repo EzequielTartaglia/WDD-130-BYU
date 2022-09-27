@@ -139,10 +139,13 @@ nav  {
   display: flex;
 }
 nav a {
-  padding:1em;
-  min-width: 120px;
-  text-decoration: none;
-  padding: 10px;
+  font-weight: 800;
+  background: -webkit-linear-gradient(45deg, #a1a1a1, #f6f6f6 50%);
+  background-clip: var();
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  padding: 1em;
   
 
 }
@@ -150,10 +153,13 @@ nav a:link, nav a:visited {
   color: var(--nav-link-color);
 }
 nav a:hover {
-  color: var(--nav-hover-link-color);
-  background: linear-gradient( var(--nav-hover-background-color-1), var(--nav-hover-background-color-2));
-  border-radius: 3px;
-
+  font-weight: 800;
+  background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+  background-clip: var();
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.4px rgb(0, 0, 0);
+  text-decoration: none;
   
 }
 .sitemap {
