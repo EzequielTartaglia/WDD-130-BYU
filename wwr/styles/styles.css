@@ -94,7 +94,7 @@ header nav a {
 }
 header nav a:hover {
   font-weight: 800;
-  color:#eeeeee;
+  color:#0c4e67;
   margin: 0;
   min-width: 120px;
   text-decoration: none;
@@ -125,7 +125,7 @@ h6 {
 .home-title{
   margin-top: 10px;
   font-size: 2em;
-  font-family: var(--heading-font);
+  font-family: Source Sans Pro,"Open Sans";;
   color:#eeeeee
 }
 
@@ -174,7 +174,7 @@ h3{
   );
   border: solid .3px rgb(230, 230, 230);
   border-radius: 5px;
-  -webkit-text-fill-color: #ffffff;
+  color: #ffffff;
   text-decoration: none;
 }
 .join {
@@ -190,7 +190,7 @@ h3{
     );
     border: solid .3px rgb(0, 0, 0);
     border-radius: 5px;
-    -webkit-text-fill-color: #ffffff;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
 
@@ -198,10 +198,10 @@ h3{
 
 .book:hover,
 .join:hover {
-  -webkit-text-fill-color: #0c4e67;
+  color: #0c4e67;
   background: linear-gradient(
-    var(--nav-hover-background-color-1),
-    var(--nav-hover-background-color-2)
+    white,
+    #3ad9e4
   );
   border: solid .3px rgb(0, 0, 0);
 
@@ -222,13 +222,13 @@ h3{
   margin: 0;
   font-size: 2em;
   color: white;
-  font-family: var(--heading-font);
+  font-family: Source Sans Pro,"Open Sans";;
   padding: 10px;}
 
 .msg p {
   font-size: .8em;
   color: white;
-  font-family: var(--heading-font);
+  font-family: Source Sans Pro,"Open Sans";;
   padding: 10px;
   padding-bottom: 15px;
 }
@@ -258,7 +258,7 @@ footer a {
 
 footer a:hover {
   font-weight: 800;
-  color:#eeeeee;
+  color:#0c4e67;
   margin: 0;
   text-decoration: none;
   
