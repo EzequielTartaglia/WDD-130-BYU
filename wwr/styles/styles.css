@@ -23,8 +23,8 @@ Fonts are separated by a & */
   --nav-link-color: white;
   --nav-background-color: #0c4e67;
   --nav-hover-link-color: black;
-  --nav-hover-background-color-1: var(--accent2-color);
-  --nav-hover-background-color-2: var(--secondary-color);
+  --nav-hover-background-color-1: white;
+  --nav-hover-background-color-2: #3ad9e4;
 }
 
 body {
@@ -34,10 +34,10 @@ body {
   background: #eeeeee;
 }
 
-.content {
+#content {
   max-width: 1600px;
   margin: 0 auto;
-  font-family: var(--paragraph-font);
+  font-family: Source Sans Pro, Helvetica, sans-serif;
 
 }
 #logo-link{
@@ -59,9 +59,9 @@ main section img{
   height: 725px;
   background: linear-gradient(
     315deg,
-    var(--paragraph-background-color),
-    var(--secondary-color),
-    var(--paragraph-background-color)
+    #0c4e67,
+    #3ad9e4,
+    #0c4e67
   );
 
 }
@@ -70,9 +70,9 @@ header {
   padding: 1em;
   background: linear-gradient(
     315deg,
-    var(--paragraph-background-color),
-    var(--secondary-color),
-    var(--paragraph-background-color)
+    #0c4e67,
+    #3ad9e4,
+    #0c4e67
   );
   font-weight: 800;
 }
@@ -80,28 +80,21 @@ header {
 
 header > h1,
 header > h2 {
-  color: var(--headline-color-on-color);
-  font-family: var(--heading-font);
+  color: white;
+  font-family: Source Sans Pro,"Open Sans";;
 }
 
 header nav a {
   padding: 35px;
   font-size: 40px;
   font-weight: 800;
-  background: -webkit-linear-gradient(45deg, #a1a1a1, #f6f6f6 50%);
-  background-clip: var();
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color:#eeeeee;
   margin: 0;
   text-decoration: none;
 }
 header nav a:hover {
   font-weight: 800;
-  background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
-  background-clip: var();
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: .5px rgb(0, 0, 0);
+  color:#eeeeee;
   margin: 0;
   min-width: 120px;
   text-decoration: none;
@@ -112,7 +105,7 @@ header .logo,.icon{
 
 
 h4 {
-  color: var(--headline-color-on-color);
+  color: white;
   font-size: 16px;
   text-align: center;
 }
@@ -122,36 +115,24 @@ h3,
 h5,
 h6 {
   font-weight: 800;
-  background: var(--primary-color);
-  background-clip: var();
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: .01px rgb(0, 0, 0);
+  color:#0c4e67;
   margin: 0;
   min-width: 120px;
   text-decoration: none;
   text-align: center;
 }
-
+ 
 .home-title{
   margin-top: 10px;
   font-size: 2em;
   font-family: var(--heading-font);
-  background: -webkit-linear-gradient(45deg, #09009f, #00ff95 70%);
-  background-clip: var();
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: .01px rgb(0, 0, 0);
+  color:#eeeeee
 }
 
 h2{
   margin: 0;
   font-size: 35px;
-  background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
-  background-clip: var();
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: .5px rgb(0, 0, 0);
+  color:#eeeeee
 
 }
 h3{
@@ -184,12 +165,12 @@ h3{
   margin-top: 50px;
   padding: 15px 30px;
   font-size: 18px;
-  color: var(--accent2-color);
+  color: white;
   background: linear-gradient(
     315deg,
-    var(--paragraph-background-color),
-    var(--secondary-color),
-    var(--paragraph-background-color)
+    #0c4e67,
+    #3ad9e4,
+    #0c4e67
   );
   border: solid .3px rgb(230, 230, 230);
   border-radius: 5px;
@@ -200,12 +181,12 @@ h3{
     margin-top: 50px;
     padding: 15px 30px;
     font-size: 18px;  
-    color: var(--accent2-color);
+    color: white;
     background: linear-gradient(
       315deg,
-      var(--paragraph-background-color),
-      var(--secondary-color),
-      var(--paragraph-background-color)
+      #0c4e67,
+      #3ad9e4,
+      #0c4e67
     );
     border: solid .3px rgb(0, 0, 0);
     border-radius: 5px;
@@ -229,9 +210,9 @@ h3{
 .msg {
   background: linear-gradient(
     315deg,
-    var(--paragraph-background-color),
-    var(--secondary-color),
-    var(--paragraph-background-color)
+    #0c4e67,
+    #3ad9e4,
+    #0c4e67
   );
   padding: 35px;
   line-height: 1.5em
@@ -257,9 +238,9 @@ footer {
   padding: 25px 50px;
   background: linear-gradient(
     315deg,
-    var(--paragraph-background-color),
-    var(--secondary-color),
-    var(--paragraph-background-color)
+    #0c4e67,
+    #3ad9e4,
+    #0c4e67
   );
 }
 
@@ -270,21 +251,14 @@ footer a {
   display: flex;
   padding: 10px;
   font-weight: 800;
-  background: -webkit-linear-gradient(45deg, #dfdfdf, #f6f6f6 50%);
-  background-clip: var();
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color:#eeeeee;
   margin: 0;
   text-decoration: none;
 }
 
 footer a:hover {
   font-weight: 800;
-  background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
-  background-clip: var();
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: .01px rgb(0, 0, 0);
+  color:#eeeeee;
   margin: 0;
   text-decoration: none;
   
@@ -293,4 +267,10 @@ footer a:hover {
 footer .social a{
   padding-top: 15px;
   padding-left: 15px;
+
+}
+footer .social{
+  display: inline-flex;
+  width: 80px;
+  padding: 0;
 }
