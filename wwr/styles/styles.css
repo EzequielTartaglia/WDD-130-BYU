@@ -1,34 +1,276 @@
-html{
-    box-sizing: content-box;
-    width: 1600px;
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a & */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Sans+Pro&display=swap");
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #0c4e67;
+  --secondary-color: #3ad9e4;
+  --accent1-color: #2a9d8f;
+  --accent2-color: white;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: Source Sans Pro,"Open Sans";
+  --paragraph-font: Source Sans Pro, Helvetica, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #0c4e67; /* headlines on a white background */
+  --headline-color-on-color: white; /* headlines on a colored background */
+  --paragraph-color-on-white: #0c4e67; /* paragraph text on a white background */
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */
+  --paragraph-background-color: #0c4e67;
+  --nav-link-color: white;
+  --nav-background-color: #0c4e67;
+  --nav-hover-link-color: black;
+  --nav-hover-background-color-1: white;
+  --nav-hover-background-color-2: #3ad9e4;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 18px;
+  background: #eeeeee;
+}
+
+#content {
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: Source Sans Pro, Helvetica, sans-serif;
 
 }
-body{
-    background-color: rgb(97, 97, 97);
-    margin: 0 auto;
+#logo-link{
+  padding-top: 5px ;
+}
+nav a,
+#hero-msg h1,
+#hero-msg h4,
+.button-box,
+main section {
+  text-align: center;
+  padding: 20px;
+}
+main section img{
+  box-sizing: border-box;
+}
+
+#background {
+  height: 725px;
+  background: linear-gradient(
+    315deg,
+    #0c4e67,
+    #3ad9e4,
+    #0c4e67
+  );
 
 }
-.header,.content{
-    width: 2000px;
+
+header {
+  padding: 1em;
+  background: linear-gradient(
+    315deg,
+    #0c4e67,
+    #3ad9e4,
+    #0c4e67
+  );
+  font-weight: 800;
 }
-.content{
-    display: flex;
-    text-align: center;
-    flex-direction: row;
+
+
+header > h1,
+header > h2 {
+  color: white;
+  font-family: Source Sans Pro,"Open Sans";;
 }
-.content .image{
-    display:block;
-    border-radius: 100%;
-    background-color: rgb(55, 55, 55);
-    padding: 0.8em;
-    border: 10px;
-    margin: 0 150px;
-    
+
+header nav a {
+  padding: 35px;
+  font-size: 40px;
+  font-weight: 800;
+  color:#eeeeee;
+  margin: 0;
+  text-decoration: none;
+}
+header nav a:hover {
+  font-weight: 800;
+  color:#eeeeee;
+  margin: 0;
+  min-width: 120px;
+  text-decoration: none;
+}
+header .logo,.icon{
+    width:80px;
+}
+
+
+h4 {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h5,
+h6 {
+  font-weight: 800;
+  color:#0c4e67;
+  margin: 0;
+  min-width: 120px;
+  text-decoration: none;
+  text-align: center;
+}
+ 
+.home-title{
+  margin-top: 10px;
+  font-size: 2em;
+  font-family: var(--heading-font);
+  color:#eeeeee
+}
+
+h2{
+  margin: 0;
+  font-size: 35px;
+  color:#eeeeee
 
 }
-.content .image img{
-    height: 300px;
-    align-items: center;
-    align-content: center;
-    border-radius: 100%;
+h3{
+  font-size: 25px;
+}
+
+#hero-img{
+    width: 100%;
+}
+.product{    margin: 100px 0;
+}
+.card-img{
+    width: 280px;
+    height: 280px;
+    padding: 0;
+    min-width: 8.5em;
+    border: 10px solid black;
+}
+.icon {
+  margin: 0 auto;
+  padding-top: 10px;
+} 
+.product p {
+  padding: 10px;
+}
+
+
+.book
+ {
+  margin-top: 50px;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: white;
+  background: linear-gradient(
+    315deg,
+    #0c4e67,
+    #3ad9e4,
+    #0c4e67
+  );
+  border: solid .3px rgb(230, 230, 230);
+  border-radius: 5px;
+  -webkit-text-fill-color: #ffffff;
+  text-decoration: none;
+}
+.join {
+    margin-top: 50px;
+    padding: 15px 30px;
+    font-size: 18px;  
+    color: white;
+    background: linear-gradient(
+      315deg,
+      #0c4e67,
+      #3ad9e4,
+      #0c4e67
+    );
+    border: solid .3px rgb(0, 0, 0);
+    border-radius: 5px;
+    -webkit-text-fill-color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+
+  }
+
+.book:hover,
+.join:hover {
+  -webkit-text-fill-color: #0c4e67;
+  background: linear-gradient(
+    var(--nav-hover-background-color-1),
+    var(--nav-hover-background-color-2)
+  );
+  border: solid .3px rgb(0, 0, 0);
+
+}
+
+.msg {
+  background: linear-gradient(
+    315deg,
+    #0c4e67,
+    #3ad9e4,
+    #0c4e67
+  );
+  padding: 35px;
+  line-height: 1.5em
+}
+
+.msg h2{  
+  margin: 0;
+  font-size: 2em;
+  color: white;
+  font-family: var(--heading-font);
+  padding: 10px;}
+
+.msg p {
+  font-size: .8em;
+  color: white;
+  font-family: var(--heading-font);
+  padding: 10px;
+  padding-bottom: 15px;
+}
+
+footer {
+  margin-top: 200px;
+  padding: 25px 50px;
+  background: linear-gradient(
+    315deg,
+    #0c4e67,
+    #3ad9e4,
+    #0c4e67
+  );
+}
+
+footer h3, footer p {
+  color: white;
+}
+footer a {
+  display: flex;
+  padding: 10px;
+  font-weight: 800;
+  color:#eeeeee;
+  margin: 0;
+  text-decoration: none;
+}
+
+footer a:hover {
+  font-weight: 800;
+  color:#eeeeee;
+  margin: 0;
+  text-decoration: none;
+  
+}
+
+footer .social a{
+  padding-top: 15px;
+  padding-left: 15px;
+
+}
+footer .social{
+  display: inline-flex;
+  width: 80px;
+  padding: 0;
 }
