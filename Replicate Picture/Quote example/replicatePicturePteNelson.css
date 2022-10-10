@@ -1,0 +1,67 @@
+*{
+    text-align: center;
+}
+body{
+    background-color: rgb(246, 153, 180);
+    max-width: 560px; 
+    margin: 0 auto;
+    padding: 4em;
+  
+}
+h1{
+    font-size: 2em ;
+    font-weight: bolder;
+    color: black;
+}
+h1:hover{
+    color: white;
+  
+}
+.quote{
+    max-width: 330px;
+    color: white;
+    font-size: 0.8em;
+    margin: 0 auto;
+
+}
+.quote .fp{
+    font-size: 11px;
+    max-width: 350px;
+}
+.quote .sp{
+    color: black;
+    font-weight: bolder;
+}
+.stepsList{
+    padding: 5px;
+
+}
+.stepsList{margin-left: 25%;}
+.stepsList li{
+    margin: 0 auto;
+    text-align:left;
+    line-height: 1.3em;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+}
+
+h3{
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 200px;
+}
+
+.finalQuote{
+    margin: 0 auto;
+    font-size: 11px;
+    max-width: 160px;
+    line-height: 10px;
+    font-weight: bold;
+}
+.finalQuote p{ margin-bottom: -5px;}
