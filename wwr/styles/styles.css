@@ -94,7 +94,7 @@ main section {
 #hero {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  margin-top: -150px;
+  margin-top: -175px;
 }
 #hero-box {
   grid-column: 1/4;
@@ -107,7 +107,7 @@ main section {
 #hero-msg {
   grid-column: 2/3;
   grid-row: 1/2;
-  margin-top: 150px;
+  margin-top: 175px;
 }
 
 h4 {
