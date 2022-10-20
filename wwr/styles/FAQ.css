@@ -135,11 +135,10 @@ h6 {
   color: #eeeeee;
 }
 
-.home-grid h2 {
-  margin-top: 20px;
-  grid-column: 1/11;
+h2 {
+  margin: 0;
   font-size: 35px;
-  color: #0c4e67;
+  color: #eeeeee;
 }
 h3 {
   font-size: 25px;
@@ -153,38 +152,63 @@ h3 {
   display: grid;
   grid-template-columns: repeat(10,1fr);
 }
-main section img {
+.home-grid h2{
+    color: #0c4e67;
+    grid-column: 1/11;
+    grid-row:  1/4;
+    margin-top: 20px;
+    margin-left: 0px ;
+    font-size: 35px;
+  
+}
+
+main section h2 {
   box-sizing: border-box;
 }
 .product1,
-.product2,
+.faq,
 .product3 {
   margin: 100px 0;
   
 }
 .product1 h2,
-.product2 h2,
+.faq h2,
 .product3 h2 {
   padding: 10px;
   color: black;
   margin-bottom: 10px;
 }
 .product1{
-  grid-column: 2/4;
-  grid-row:  2/3;
+  margin-top: 30rem;
+  grid-column: 1/4;
+  grid-row:  1/4;
+  
 }
-.product2{
-  grid-column: 5/7;
+.faq{
+  grid-column: 5/6;
   grid-row:  2/3;
+  margin-left: 10%;
+}
+.ask{
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    width: 500px;
+    z-index: 20;
+}
+.ask p b{
+    padding: 10px;
+    margin-bottom: 20px;
 }
 .product3{
-  grid-column: 8/10;
+  margin-top: 60rem;
+  grid-column: 8/11;
   grid-row:  2/3;
 }
 .card-img {
   padding: 0;
-  min-width: 8.5em;
-  height: 200px;
+  height: 13rem;
+  min-width: 12rem;
   border: 10px solid #077279;
   border-radius: 6px;
   transition: transform .5s;
@@ -233,48 +257,8 @@ main section img {
   border: solid 0.3px rgb(0, 0, 0);
 }
 
-.msg {
-  background: linear-gradient(315deg, #0c4e67, #3ad9e4, #0c4e67);
-  padding: 35px;
-  line-height: 1.5em;
-  grid-column: 6/10;
-  grid-row:  6/7;
-  box-shadow: 5px 5px 10px #0c4e67;
-
-}
-
-.msg h2 {
-  margin: 0;
-  font-size: 2em;
-  color: white;
-  font-family: Source Sans Pro, "Open Sans";
-  padding: 10px;
-}
-
-.msg p {
-  font-size: 0.8em;
-  color: white;
-  font-family: Source Sans Pro, "Open Sans";
-  padding: 10px;
-  padding-bottom: 15px;
-}
-
-#background {
-  height: 725px;
-  background: linear-gradient(315deg, #0c4e67, #3ad9e4, #0c4e67);
-  grid-column: 1/11;
-  grid-row:  4/9;
-
-}
-.lake{
-  width: 100%;
-  grid-column: 2/7;
-  grid-row:  5/8;
-  box-shadow: 5px 5px 10px #0c4e67;
-}
 footer {
   padding: 25px 50px;
-  margin-top: 200px; 
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -330,18 +314,11 @@ footer .social img   {
       font-size: 25px;
       color: #6f7364;
   }
-  .product1, .product2, .product3 { 
+  .product1, .ask, .product3 { 
       margin: 50px auto;
       width: 60%;
   }
-  #background {
-      display: none;
-  }
-  .lake, .msg {
-      width: 80%;
-      display: block;
-      margin: 0 auto;
-  }
+
   footer {
       margin-top: 25px;
   }
