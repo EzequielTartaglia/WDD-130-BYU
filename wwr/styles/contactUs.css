@@ -256,6 +256,8 @@ h4 {
       color: #0c4e67;
       background: linear-gradient(white, #3ad9e4);
       border: solid 0.3px rgb(0, 0, 0);
+      cursor: pointer;
+
     }
 
 /* Media Queries */
