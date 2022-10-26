@@ -282,49 +282,87 @@ footer .social i:hover{
 
 /* Media Queries */
 
-
 @media screen and (max-width: 900px) {
-  #hero, .home-grid {
-      display: block;
-      height: auto;
+  #hero,
+  .home-grid {
+    display: block;
+    height: auto;
   }
-  nav, footer {
-      flex-direction: column;
+  nav,
+  footer {
+    flex-direction: column;
+  }
+  header{
+    width: 100%;
+  }
+  header .link{
+    margin-left: -20px;
+    font-size: 30px;
+  }
+  footer{
+    margin-top: -50px;
+    margin-left: -25px;
+    width: 90%;
   }
   nav a {
-      display: block;
-      padding: 15px;
+    display: block;
+    padding: 15px;
   }
   #hero {
-      margin-top: 0;
+    margin-top: 0;
+    background-image: url("../images/home/background.jpg");
+    height: 550px;
   }
   #hero-msg {
-      margin-top: 0;
+    margin-top: 0;
   }
   #hero-msg h4 {
-      display: none;
+    display: none;
+  }
+  #hero-img {
+    height: 0px;
+  }
+  #hero-video {
+    width: 75%;
+    margin-left: 12.5%;
   }
   .home-title {
-      font-size: 25px;
-      color: #6f7364;
+    font-size: 45px;
+    color: #265f59;
   }
-  .product1, .product2, .product3 { 
-      margin: 50px auto;
-      width: 60%;
+  main section {
+    padding:0
   }
-  #background {
-      display: none;
+  .title{
+    font-size: 25px;
+    margin-top: -50px;
+    margin-bottom: -100px;
   }
-  .lake, .msg {
-      width: 80%;
-      display: block;
-      margin: 0 auto;
+  .competencies1,
+  .competencies2,
+  .competencies3 {
+    margin: 50px auto;
+    width: 60%;
+    margin-left: auto;
+
   }
-  footer {
-      margin-top: 25px;
+
+  .home-grid .competencies1 h2,
+  .home-grid .competencies3 h2 {
+    font-size: 18px;
+    padding: 0;
   }
+  .home-grid .competencies2 img {
+    display: inline-flex;
+
+    margin-left: -30px;
+    
+
+  }
+  .home-grid .button-box2 .book {
+    display: inline-flex;
+    margin-top: -50px;
+  }
+    
+
 }
-
-
-
-
