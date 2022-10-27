@@ -201,7 +201,7 @@ h3 {
   font-size: 40px;
 }
 .slide-img {
-  margin-top: 10px;
+  margin-top: 50px;
   margin-left: 5%;
   margin-bottom: 70px;
   padding: 20px;
@@ -456,6 +456,20 @@ footer .social i:hover{
     padding: 15px;
   }
 
+  .slide-img {
+    margin-top: 50px;
+    margin-left: 0;
+    margin-bottom: 70px;
+    padding: 20px;
+    width: 90%;
+    height: 100%;
+    object-fit: cover; 
+  }
+  .slide-btn{
+    width: .8rem;
+    height: .8rem;
+  
+  }
   .home-title {
     font-size: 45px;
     color: white;
@@ -484,7 +498,7 @@ footer .social i:hover{
   }
 
   .button-box2-div a {
-    margin-left: 7.5rem;
+    margin-left: 22.5%;
   }
     
 
