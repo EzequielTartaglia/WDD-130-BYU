@@ -1,0 +1,492 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Sans+Pro&display=swap");
+
+body {
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+    background: #eeeeee;
+  }
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #042716;
+  --primary-color-second-option: #001D0F;
+  --secondary-color: #265F59;
+  --accent1-color: #DCB234;
+  --accent2-color: #E1E1E1;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Open Sans";
+  --paragraph-font: Source Sans Pro, Helvetica, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #265F59; /* headlines on a white background */
+  --headline-color-on-color: #E1E1E1; /* headlines on a colored background */
+  --paragraph-color-on-white: #265F59; /* paragraph text on a white background */
+  --paragraph-color-on-color: #E1E1E1; /* paragraph text on a colored background */
+  --paragraph-background-color: #265F59;
+  --nav-link-color: #E1E1E1;
+  --nav-background-color: #265F59;
+  --nav-hover-link-color: #DCB234;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 18px;
+  background: #eeeeee;
+}
+
+#content {
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: Source Sans Pro, Helvetica, sans-serif;
+}
+
+#content li { 
+  display: table-cell; 
+  position: relative; 
+  padding: 15px 0;
+}
+
+#content b{
+  color:#DCB234;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 150px auto;
+  background: linear-gradient(315deg, #265F59, #001D0F, #265F59);
+  font-weight: 800;
+  opacity: 100%;
+}
+
+header > h1,
+header > h2 {
+  color: white;
+  font-family: Source Sans Pro, "Open Sans";
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+
+}
+header nav a {
+  font-size: 40px;
+  font-weight: 800;
+  color: #eeeeee;
+  margin: 0;
+  transition: all 0.5s ease-out;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  display: inline-block;
+  padding: 10px 10px;
+  position: relative;
+
+}
+header nav a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 20;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #DCB234;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+header nav 
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+header nav a:hover {
+  color: #DCB234;
+  min-width: 120px;
+  
+}
+header .logo,
+.icon {
+  width: 80px;
+  border-radius: 12px;
+  transition: all 0.5s ease-out;}
+header #logo-icon:hover {
+  box-shadow: #DCB234 0px 10px 40px;
+}
+
+#logo-link {
+  padding-top: 5px;
+  justify-self: center;
+  align-self: center;
+}
+nav a,
+.button-box,
+main section {
+  text-align: center;
+  padding: 20px;
+}
+
+h4 {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h5,
+h6 {
+  font-weight: 800;
+  color: #265F59;
+  margin: 0;
+  min-width: 120px;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+h3 {
+  font-size: 25px;
+}
+
+
+
+/* places the carousel content on center of the carousel */
+.carousel-content {
+  position: absolute;
+  /*to center the content horizontally and vertically*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  z-index: 50;
+}
+
+/* ----- slideshow stylings ----- */
+.slideshow {
+  height: 100%;
+  overflow: hidden; /* to hide slides in x-direction */
+  position: relative;
+  background-image: url("../images/certifications/background.jfif");
+  background-repeat: no-repeat;
+  background-size: 3000px;
+}
+/* wrapper which wraps all the slideshow images stylings */
+.slideshow-wrapper {
+  display: flex;
+  /* We give it width as 400% because we are making a 
+     4 image carousel. If you want to make for example, 
+     5 images carousel, then give width as 500%. */
+  width: 500%;
+  height: 100%;
+  position: relative;
+  /* you can change the animation settings from below */
+  animation: slideshow 20s infinite;
+
+  
+
+}
+/* define width and height for images*/
+.slide {
+  width: 100%;
+  height: 100%;
+  
+}
+.home-title {
+  margin-top: 60px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+.slide-img {
+  margin-top: 10px;
+  margin-left: 5%;
+  margin-bottom: 70px;
+  padding: 20px;
+  width: 90%;
+  height: 100%;
+  object-fit: cover; 
+}
+/* @keyframes are used to provide animations
+ We make these settings for 4 image carousel.
+ Make modification according to your needs. */
+@keyframes slideshow {
+  0%  { left: 0; }
+  10% { left: 0; }
+  15% { left: -100%; }
+  25% { left: -100%; }
+  30% { left: -200%; }
+  40% { left: -200%; }
+  45% { left: -300%; }
+  55% { left: -300%; }
+  60% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -100%; }
+  85% { left: -100%; }
+  90% { left: 0%; }
+}
+/* ----- end of slideshow stylings ----- */
+
+/* ----- carousel control buttons stylings ----- */
+.slide-btn {
+  background-color:#001D0F;
+  border-radius: 50%;
+  border: .1rem solid #DCB234;
+  width: 1.2rem;
+  height: 1.2rem;
+  outline: none;
+  cursor: pointer;
+  /* stylings for positioning the buttons at
+     the bottom of the carousel */
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transition: all 0.2s ease-out;
+  transform: translateX(-50%);
+  z-index: 70;
+}
+/* As we provide position as absolute, 
+the buttons places one over the other. 
+So, we have to place them individually
+at their correct positions. */
+.slide-btn-1 {
+  left: 40%;
+}
+.slide-btn-2 {
+  left: 45%;
+}
+.slide-btn-3 {
+  left: 50%;
+}
+.slide-btn-4 {
+  left: 55%;
+}
+.slide-btn-5 {
+  left: 60%;
+}
+/* When we focus on the particular button, 
+the animation stops to that particular image 
+to which the button is associated. */
+.slide-btn-1:focus~.slideshow-wrapper {
+  animation: none;
+  left: 0;
+}
+.slide-btn-2:focus~.slideshow-wrapper {
+  animation: none;
+  left: -100%;
+}
+.slide-btn-3:focus~.slideshow-wrapper {
+  animation: none;
+  left: -200%;
+}
+.slide-btn-4:focus~.slideshow-wrapper {
+  animation: none;
+  left: -300%;
+}
+.slide-btn-5:focus~.slideshow-wrapper {
+  animation: none;
+  left: -400%;
+}
+/* when we focus on the button, the background color changes */
+.slide-btn:focus {
+  background-color: #DCB234;
+  border: .1rem solid #eeedeb;
+
+}
+.slide-btn:hover{
+  background-color: #DCB234;
+  border: .1rem solid #eeedeb;
+
+
+}
+/* ----- end of carousel control buttons stylings ----- */
+
+
+.home-grid{
+  display: grid;
+  grid-template-columns: repeat(9,1fr);
+  margin-left: 10%;
+  margin-right: 10%;
+  
+}
+#grid-title {
+  grid-column: 1/11;
+  font-size: 50px;
+  text-transform: uppercase;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  margin: 0;
+  margin-left: 50px;
+  
+}
+
+.home-grid .skills h2{
+  max-width: 100%;
+  font-size: 35px;
+}
+.button-box2-div{
+  grid-row: 5;
+  grid-column: 2/11;
+  margin-top: 50px;
+  margin-bottom: -50px;
+
+}
+.button-box2-div a{
+ 
+  margin-left: 25%;
+}
+.book,
+.button {
+  margin-top: 50px;
+  padding: 15px 20px;
+  font-size: 18px;
+  background: linear-gradient(315deg, #265f59, #001d0f, #265f59);
+  border: solid 0.3px #dcb234;
+  border-radius: 5px;
+  color: #dcb234;
+  text-decoration: none;
+  font-weight: bolder;
+  text-transform: uppercase;
+  transition: all 0.3s ease-out;
+}
+
+.book:hover {
+  color: white;
+  background: linear-gradient(315deg, #dcb234, #2c2e26, #dcb234);
+  border: solid 0.3px white;
+}
+.checked {
+  color: orange;
+}
+.button-box2{
+  margin: 0;
+}
+footer {
+  padding: 25px 50px;
+  margin-top: 200px; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(315deg, #265F59, #001D0F, #265F59);
+  color: white
+}
+
+footer h3{
+  color: white;
+}
+footer  a {
+  font-weight: 800;
+  color: white;
+  margin: 0;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  display: inline-block;
+  padding: 10px 10px;
+  position: relative;
+}
+footer a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 20;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #DCB234;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+footer a:hover {
+ color: #DCB234;
+}
+footer 
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+footer .social i   {
+  font-size: 35px;
+  padding-top: 5px;
+  color: white;
+  transition: all 0.5s ease-out;
+}
+
+footer .social i:hover{
+  color: #DCB234;
+  
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 900px) {
+  
+  .home-grid {
+    display: block;
+    height: auto;
+    margin: 0;
+    font-size: 5px;
+    padding-bottom: 200px;
+    
+  }
+  nav,
+  footer {
+    flex-direction: column;
+  }
+  header{
+    width: 100%;
+  }
+  header .link{
+    margin-left: -20px;
+    font-size: 30px;
+  }
+  footer{
+    margin-top: -50px;
+    margin-left: -25px;
+    width: 90%;
+  }
+  nav a {
+    display: block;
+    padding: 15px;
+  }
+
+  .home-title {
+    font-size: 45px;
+    color: white;
+    padding-bottom: 20px;
+  }
+  main section {
+    padding:0
+  }
+  .title{
+    font-size: 25px;
+    margin-top: -50px;
+    margin-bottom: 5px;
+  }
+  .skills{
+    margin: 10px auto;
+    margin-left: auto;
+  }
+
+  #grid-title{
+      margin-left: 0
+    }
+  
+  .home-grid .skills h2 {
+    font-size: 20px;
+    padding: 0;
+  }
+
+  .button-box2-div a {
+    margin-left: 7.5rem;
+  }
+    
+
+}
+
