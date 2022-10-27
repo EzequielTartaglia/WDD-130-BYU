@@ -250,23 +250,22 @@ main section img {
 .competencies2 {
   grid-column: 6/7;
   grid-row: 2/3;
+  margin-left: -100px;
 }
 
 .competencies3 {
-  margin-left: -50px;
   grid-column: 8/10;
   grid-row: 2/3;
 }
 .card-img,
 .card-img2 {
-  margin-left: 0px;
-  min-width: 16.5em;
+  margin-left: auto;
+  min-width: 18.5em;
   height: 400px;
   border-radius: 6px;
   transition: transform 0.5s;
   
 }
-.card-img:hover,
 .card-img2:hover {
   opacity: 0.6;
   transform: scale(1.1);
@@ -278,25 +277,6 @@ main section img {
 }
 .button-box2 {
   margin: 0;
-}
-
-.join {
-  margin-top: 50px;
-  padding: 15px 30px;
-  font-size: 18px;
-  color: white;
-  background: linear-gradient(315deg, #0c4e67, #3ad9e4, #0c4e67);
-  border: solid 0.3px rgb(0, 0, 0);
-  border-radius: 5px;
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.join:hover {
-  color: #0c4e67;
-  background: linear-gradient(white, #3ad9e4);
-  border: solid 0.3px rgb(0, 0, 0);
 }
 
 footer {
@@ -370,7 +350,7 @@ footer .social i:hover {
     flex-direction: column;
   }
   header{
-    width: 100%;
+    width: 110%;
   }
   header .link{
     margin-left: -20px;
@@ -431,8 +411,9 @@ footer .social i:hover {
   }
   .home-grid .competencies2 img {
     display: inline-flex;
-
-    margin-left: -30px;
+    min-width: none;
+    width: 50%;
+    margin-left: -45px;
     
 
   }
