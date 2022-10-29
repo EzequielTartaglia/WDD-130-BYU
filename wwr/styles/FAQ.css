@@ -1,0 +1,340 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a & */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Sans+Pro&display=swap");
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #0c4e67;
+  --secondary-color: #3ad9e4;
+  --accent1-color: #2a9d8f;
+  --accent2-color: white;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: Source Sans Pro, "Open Sans";
+  --paragraph-font: Source Sans Pro, Helvetica, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #0c4e67; /* headlines on a white background */
+  --headline-color-on-color: white; /* headlines on a colored background */
+  --paragraph-color-on-white: #0c4e67; /* paragraph text on a white background */
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */
+  --paragraph-background-color: #0c4e67;
+  --nav-link-color: white;
+  --nav-background-color: #0c4e67;
+  --nav-hover-link-color: black;
+  --nav-hover-background-color-1: white;
+  --nav-hover-background-color-2: #3ad9e4;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 18px;
+  background: #eeeeee;
+}
+
+#content {
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: Source Sans Pro, Helvetica, sans-serif;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 150px auto;
+  background: linear-gradient(315deg, #0c4e67, #3ad9e4, #0c4e67);
+  font-weight: 800;
+  opacity: 80%;
+}
+
+header > h1,
+header > h2 {
+  color: white;
+  font-family: Source Sans Pro, "Open Sans";
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+
+}
+header nav a {
+  padding: 35px;
+  font-size: 40px;
+  font-weight: 800;
+  color: #eeeeee;
+  margin: 0;
+  text-decoration: none;
+}
+header nav a:hover {
+  font-weight: 800;
+  color: #0c4e67;
+  margin: 0;
+  min-width: 120px;
+  text-decoration: none;
+}
+header .logo,
+.icon {
+  width: 80px;
+}
+
+#logo-link {
+  padding-top: 5px;
+  justify-self: center;
+  align-self: center;
+}
+nav a,
+#hero-msg h1,
+#hero-msg h4,
+.button-box,
+main section {
+  text-align: center;
+  padding: 20px;
+}
+#hero {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin-top: -175px;
+}
+#hero-box {
+  grid-column: 1/4;
+  grid-row: 1/3;
+  z-index: -1;
+}
+#hero-msg h4 {
+  color: white;
+}
+#hero-msg {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 175px;
+}
+
+h4 {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h5,
+h6 {
+  font-weight: 800;
+  color: #0c4e67;
+  margin: 0;
+  min-width: 120px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.home-title {
+  margin-top: 10px;
+  font-size: 2em;
+  font-family: Source Sans Pro, "Open Sans";
+  color: #eeeeee;
+}
+
+h2 {
+  margin: 0;
+  font-size: 35px;
+  color: #eeeeee;
+}
+h3 {
+  font-size: 25px;
+}
+
+#hero-img {
+  width: 100%;
+}
+
+.home-grid{
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+}
+.home-grid h2{
+    color: #0c4e67;
+    grid-column: 1/11;
+    grid-row:  1/4;
+    margin-top: 20px;
+    margin-left: 0px ;
+    font-size: 35px;
+  
+}
+
+main section h2 {
+  box-sizing: border-box;
+}
+.product1,
+.faq,
+.product3 {
+  margin: 100px 0;
+  
+}
+.product1 h2,
+.faq h2,
+.product3 h2 {
+  padding: 10px;
+  color: black;
+  margin-bottom: 10px;
+}
+.product1{
+  margin-top: 30rem;
+  grid-column: 1/4;
+  grid-row:  1/4;
+  
+}
+.faq{
+  grid-column: 5/6;
+  grid-row:  2/3;
+  margin-left: 10%;
+}
+.ask{
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    width: 500px;
+    z-index: 20;
+}
+.ask p b{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.product3{
+  margin-top: 60rem;
+  grid-column: 8/11;
+  grid-row:  2/3;
+}
+.card-img {
+  padding: 0;
+  height: 13rem;
+  min-width: 12rem;
+  border: 10px solid #077279;
+  border-radius: 6px;
+  transition: transform .5s;
+  box-shadow: 5px 5px 10px #6f7364;
+}
+.card-img:hover{
+  opacity: .6;
+  transform: scale(1.1);
+}
+.card-img, .mountains {
+  width: 100%;
+}
+.icon {
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.book {
+  margin-top: 50px;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: white;
+  background: linear-gradient(315deg, #0c4e67, #3ad9e4, #0c4e67);
+  border: solid 0.3px rgb(230, 230, 230);
+  border-radius: 5px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.join {
+  margin-top: 50px;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: white;
+  background: linear-gradient(315deg, #0c4e67, #3ad9e4, #0c4e67);
+  border: solid 0.3px rgb(0, 0, 0);
+  border-radius: 5px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.book:hover,
+.join:hover {
+  color: #0c4e67;
+  background: linear-gradient(white, #3ad9e4);
+  border: solid 0.3px rgb(0, 0, 0);
+}
+
+.card2-img1{
+  margin: 0;
+  margin-left: 2.5em;
+  width: 80px;
+}
+.card2-img2{
+  margin: 0;
+  width: 80px;
+  margin-right: 2.5em;
+
+}
+footer {
+  padding: 25px 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(315deg, #0c4e67, #3ad9e4, #0c4e67);
+  color: white
+}
+
+footer h3{
+  color: white;
+}
+footer  a {
+  padding: 10px;
+  font-weight: 800;
+  color: white;
+  margin: 0;
+  text-decoration: none;
+}
+
+footer a:hover {
+ color: #0c4e67;
+}
+
+footer .social img   {
+  padding-top: 15px;
+  padding-left: 2px;
+}
+
+/* Media Queries */
+
+
+@media screen and (max-width: 900px) {
+  #hero, .home-grid {
+      display: block;
+      height: auto;
+  }
+  nav, footer {
+      flex-direction: column;
+  }
+  nav a {
+      display: block;
+      padding: 15px;
+  }
+  #hero {
+      margin-top: 0;
+  }
+  #hero-msg {
+      margin-top: 0;
+  }
+  #hero-msg h4 {
+      display: none;
+  }
+  .home-title {
+      font-size: 25px;
+      color: #6f7364;
+  }
+  .product1, .ask, .product3 { 
+      margin: 50px auto;
+      width: 60%;
+  }
+  .card2-img1,.card2-img2{
+    margin: 0;
+    width: 100%;
+    height: 300px;
+  }
+  footer {
+      margin-top: 25px;
+  }
+}
