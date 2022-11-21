@@ -365,7 +365,7 @@ footer  a {
 }
 footer a:after {    
   background: none repeat scroll 0 0 transparent;
-  bottom: 20;
+  bottom: 20px;
   content: "";
   display: block;
   height: 2px;
