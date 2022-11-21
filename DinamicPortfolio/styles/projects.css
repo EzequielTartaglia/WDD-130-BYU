@@ -40,7 +40,7 @@ body {
 #content {
   max-width: 1600px;
   margin: 0 auto;
-  font-family: Source Sans Pro, Helvetica, sans-serif;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
 }
 
 #content li { 
@@ -63,7 +63,7 @@ header {
 header > h1,
 header > h2 {
   color: white;
-  font-family: Source Sans Pro, "Open Sans";
+  font-family: "Source Sans Pro", "Open Sans";
 }
 nav {
   display: flex;
