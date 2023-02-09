@@ -11,4 +11,4 @@ https://ezequieltartaglia.github.io/wdd130/DinamicPortfolio/index.html
 
 https://ezequieltartaglia.github.io/wdd130/wwr/index.html
 
-** Note: The pages have `design plans` and diferent pages **
+** Note: The pages have `design plans` and diferent pages (responsive designs) **
