@@ -10,3 +10,5 @@ https://ezequieltartaglia.github.io/wdd130/DinamicPortfolio/index.html
 ### White Water Rafting (WWR) (HTML/CSS)
 
 https://ezequieltartaglia.github.io/wdd130/wwr/index.html
+
+**Note: The pages have design plans ands diferent pages**
