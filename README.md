@@ -1,5 +1,4 @@
-# WDD-130_Web-Fundamentals_BYU
-
+# Course Web fundamentals (HTML/CSS) from Brigham Young University: WDD130
 
 ## Projects:
 
